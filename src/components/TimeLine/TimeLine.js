@@ -43,9 +43,11 @@ const Timeline = () => {
 
   return (
     <Section id = "about">
+      <SectionDivider />
+      <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        The purpose need modificqation
+        Self motivated and quick learner. Love to solve problems and ready to face difficulties and learn from them. Eager to learn new things and apply my skills on a large scale.
       </SectionText>
       <CarouselContainer ref = {carouselRef} onScroll = {handleScroll}>
         <>
@@ -78,7 +80,6 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };

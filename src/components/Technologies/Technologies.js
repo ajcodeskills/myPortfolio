@@ -9,7 +9,7 @@ const Technologies = () =>  (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a rage of technologies in the web----need modification
+      I have worked on Frontend and Backend technologies in web development world.
     </SectionText>
     <List>
       <ListItem>
@@ -18,7 +18,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            HTML, CSS, JavaScript, React.js, Redux and Typescript (Begginer)
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,20 +28,11 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js and Database
+            Node.js, Express.js, MongoDB and REST APIs
           </ListParagraph>
         </ListContainer>
       </ListItem>
-      <ListItem>
-        <DiZend size = '3rem' />
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
+     
     </List>
   </Section>
 );
