@@ -364,11 +364,11 @@ const BackgroundAnimation = () => (
       flexDirection:"column",
       justifyContent:"center",
       alignItems: "center",
-      width:200,
-      height: 200,
+      width:250,
+      height: 250,
       position: "absolute",
       top: 100,
-      left:200
+      left:150
     }}>
       <img src='/images/myPic.jpg' alt="ajay" style = {{display:"flex",height: "100%", width: "100%", borderRadius:"50%"}} />
     </div>

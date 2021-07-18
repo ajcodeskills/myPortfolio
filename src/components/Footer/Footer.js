@@ -1,6 +1,6 @@
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import {SectionDivider, SectionTitle} from '../../styles/GlobalComponents'
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
+import { SectionDivider, SectionTitle } from "../../styles/GlobalComponents";
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
   CompanyContainer,
@@ -17,7 +17,8 @@ import {
 const Footer = () => {
   return (
     <FooterWrapper>
-      <SectionDivider /><br />
+      <SectionDivider />
+      <br />
       <SectionTitle>Contact Me</SectionTitle>
       <LinkList>
         <LinkColumn>
@@ -39,8 +40,17 @@ const Footer = () => {
           <SocialIcons href="https://github.com/ajcodeskills" target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/ajaykumar914/" target="_blank">
+          <SocialIcons
+            href="https://www.linkedin.com/in/ajaykumar914/"
+            target="_blank"
+          >
             <AiFillLinkedin size="3rem" />
+          </SocialIcons>
+          <SocialIcons
+            href="https://twitter.com/AjayKum01055409"
+            target="_blank"
+          >
+            <AiFillTwitterCircle size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>

@@ -3,6 +3,7 @@ import React from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection} from './HeroStyles';
+import {WritingEffect} from './WritingEffect';
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -12,12 +13,12 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        Hi, I am Ajay Kumar. Currently I am doing full stack development at Masai School and designed some of the projects using MEARN technology.
+        <h1 style = {{color:'magenta'}}>{`Hi, I am Ajay Kumar`}</h1>
       </SectionText>
-      <Button onClick = {() => window.open('https://drive.google.com/file/d/16_P6r8VsShewkzSPp1j8IbiHaFfGLRfu/view?usp=sharing', '_blank')}>Download My CV</Button>
+      <WritingEffect />
+      <Button onClick = {() => window.open('https://drive.google.com/u/0/uc?id=16_P6r8VsShewkzSPp1j8IbiHaFfGLRfu&export=download', '_blank')}>Download My CV</Button>
     </LeftSection>
-    
-    
+
   </Section>
 );
 

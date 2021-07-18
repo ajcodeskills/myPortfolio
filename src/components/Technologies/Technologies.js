@@ -1,39 +1,27 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact } from 'react-icons/di';
+import TechIcons from '../Projects/TechIcons';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { SkillsContainer, SkillsBox } from './TechnologiesStyles';
 
+const techStacks = ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node', 'Mongodb', 'Linux', 'Windows', 'VS code']
 const Technologies = () =>  (
   <Section id = 'tech'>
     <SectionDivider />
     <br />
-    <SectionTitle>Technologies</SectionTitle>
-    <SectionText>
-      I have worked on Frontend and Backend technologies in web development world.
-    </SectionText>
-    <List>
-      <ListItem>
-        <DiReact size = '3rem' />
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            HTML, CSS, JavaScript, React.js, Redux and Typescript (Begginer)
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <DiFirebase size = '3rem' />
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node.js, Express.js, MongoDB and REST APIs
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-     
-    </List>
+    <SectionTitle>Skills & Tools</SectionTitle>
+    <SkillsContainer>
+      {
+        techStacks.map((skill, i) => {
+          return <SkillsBox>
+            <div style = {{textAlign: 'center'}}>
+              <TechIcons tag = {skill} key = {i}/>
+              <div>{skill}</div>
+            </div>
+          </SkillsBox>
+        })
+      }
+    </SkillsContainer>
   </Section>
 );
 

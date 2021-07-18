@@ -1,9 +1,9 @@
 import React from 'react';
-
+import { DiReact, DiFirebase,DiMongodb, DiNodejs, DiCss3, DiJavascript } from 'react-icons/di';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
-
+import TechIcons from './TechIcons'
 const Projects = () => (
   <Section nopadding id = 'projects'>
     <SectionDivider />
@@ -20,11 +20,15 @@ const Projects = () => (
           </TitleContent>
           <CardInfo>{project.description}</CardInfo>
           <div>
-            <TitleContent>Stack</TitleContent>
+            <TitleContent>Tech Stack</TitleContent>
             <TagList>
-              {project.tags.map((tag, i) => (
-                <Tag key = {i}>{tag}</Tag>
-              ))}
+              {project.tags.map((tag, i) => {
+                return <div style = {{textAlign:'center'}}>
+                  <TechIcons key = {i} tag = {tag} />
+                  <div>{tag}</div>
+                </div>
+                
+              })}
             </TagList>
           </div>
           <UtilityList>

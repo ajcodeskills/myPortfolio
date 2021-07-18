@@ -131,3 +131,55 @@ export const ListIcon = styled.img`
     margin-bottom: 0px;
   }
 `
+export const SkillsContainer = styled.div`
+  width: 100%;
+  max-height: 100vh;
+  padding: 2rem;
+  display:grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto;
+  gap: 5%;
+
+  @media ${props => props.theme.breakpoints.lg}{
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 5%;
+  }
+
+  @media ${props => props.theme.breakpoints.md}{
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 4%;
+  }
+  
+  @media ${props => props.theme.breakpoints.sm}{
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 3%;
+  }
+`;
+
+export const SkillsBox = styled.div`
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+
+  @media ${props => props.theme.breakpoints.lg}{
+    width: 150px;
+    height: 150px;
+  }
+
+  @media ${props => props.theme.breakpoints.md}{
+    width: 100px;
+    height: 100px;
+  }
+  
+  @media ${props => props.theme.breakpoints.sm}{
+    width: 80px;
+  height: 80px;
+  }
+`;
