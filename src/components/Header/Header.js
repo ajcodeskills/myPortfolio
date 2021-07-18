@@ -11,7 +11,8 @@ const Header = () =>  (
     <Div1>
       <Link href = '/'>
         <a style = {{display: "flex", alignItems:"center", color:'white'}}>
-          <DiCssdeck size = "3rem" /> <Span>Portfolio</Span>
+          {/* <DiCssdeck size = "3rem" />  */}
+          <Span>{`< Ajay />`}</Span>
         </a>
       </Link>
     </Div1>
@@ -23,7 +24,7 @@ const Header = () =>  (
       </li>
       <li>
         <Link href = '#tech'>
-          <NavLink>Technology</NavLink>
+          <NavLink>Skills</NavLink>
         </Link>
       </li>
       <li>
