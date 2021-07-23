@@ -136,14 +136,14 @@ export const SkillsContainer = styled.div`
   max-height: 100vh;
   padding: 2rem;
   display:grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   grid-template-rows: auto;
-  gap: 5%;
+  /* gap: 6%; */
 
   @media ${props => props.theme.breakpoints.lg}{
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: auto;
-    gap: 5%;
+    /* gap: 5%; */
   }
 
   @media ${props => props.theme.breakpoints.md}{
@@ -160,17 +160,17 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsBox = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content:center;
   align-items: center;
   border: 1px solid white;
   border-radius: 10px;
-
+  margin-bottom: 25px;
   @media ${props => props.theme.breakpoints.lg}{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 
   @media ${props => props.theme.breakpoints.md}{

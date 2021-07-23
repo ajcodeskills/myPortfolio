@@ -48,7 +48,7 @@ const Timeline = () => {
       <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Self motivated and quick learner. Love to solve problems and ready to face difficulties and learn from them. Eager to learn new things and apply my skills on a large scale.
+        Recent computer science graduate with a passion of developing scalable web application and working across the full stack. I have designed the clone of some of the websites using React, Node.js and Mongodb. Curious to learn and apply my skills on a large scale.
       </SectionText>
       <CarouselContainer ref = {carouselRef} onScroll = {handleScroll}>
         <>

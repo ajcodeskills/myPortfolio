@@ -1,8 +1,8 @@
 import React from 'react';
-import { DiReact, DiFirebase,DiMongodb, DiCss3, DiJavascript, DiWindows,  } from 'react-icons/di';
-import {FaNode} from 'react-icons/fa'
+import { DiReact, DiFirebase,DiMongodb, DiCss3, DiJavascript, DiWindows, DiJava  } from 'react-icons/di';
+import {FaNode, FaNodeJs} from 'react-icons/fa'
 import {FcLinux} from 'react-icons/fc'
-import { SiRedux, SiJson, SiHtml5, SiVisualstudiocode } from 'react-icons/si';
+import { SiRedux, SiJson, SiHtml5, SiVisualstudiocode, SiJavascript } from 'react-icons/si';
 
 
 const TechIcons = ({tag}) => {
@@ -17,7 +17,7 @@ const TechIcons = ({tag}) => {
     else if(tag === 'CSS')
         return <DiCss3 size = '4rem'  color = "#2171B6"/>
     else if(tag === 'JavaScript')
-        return <DiJavascript size = '4rem' color = '#EFD81C' />
+        return <SiJavascript size = '4rem' color = '#EFD81C' />
     else if(tag === 'JSON')
         return <SiJson size = '4rem'  />
     else if(tag === 'HTML')
@@ -30,6 +30,10 @@ const TechIcons = ({tag}) => {
         return <DiWindows size = '4rem'  />
     else if(tag === 'VS code')
         return <SiVisualstudiocode size = '4rem' color = '#2174B3'  />
+    else if(tag === 'Java')
+        return <DiJava size = '4rem' color = '#E06C00'  />
+    else if(tag === 'ExpressJS')
+        return <FaNodeJs size = '4rem' color = '#E06C00'  />
     return <SiRedux size = '4rem'  />
     
    
