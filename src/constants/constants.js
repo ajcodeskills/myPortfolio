@@ -32,7 +32,7 @@ export const projects = [
       image: '/images/4.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
     source: 'https://github.com/Rinish94/dailydietbox_clone',
-    visit: '#',
+    visit: 'https://daily-diet-box-ajcodeskills.vercel.app/',
     id: 3,
   },
   
