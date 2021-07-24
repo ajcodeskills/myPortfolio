@@ -7,34 +7,34 @@ import { SiRedux, SiJson, SiHtml5, SiVisualstudiocode, SiJavascript } from 'reac
 
 const TechIcons = ({tag}) => {
     if(tag === 'React')
-        return <DiReact size = '4rem' color = '#5ED4F3' />
+        return <DiReact size = '35%' color = '#5ED4F3' />
     else if(tag === 'Firebase')
-        return <DiFirebase size = '4rem' color='#F7C428'  />
+        return <DiFirebase size = '35%' color='#F7C428'/>
     else if(tag === 'Mongodb')
-        return <DiMongodb size = '4rem' color = '#559134'  />
+        return <DiMongodb size = '35%' color = '#559134'/>
     else if(tag === 'Node')
-        return <FaNode size = '4rem'  />
+        return <FaNode size = '35%'/>
     else if(tag === 'CSS')
-        return <DiCss3 size = '4rem'  color = "#2171B6"/>
+        return <DiCss3 size = '35%'  color = "#2171B6"/>
     else if(tag === 'JavaScript')
-        return <SiJavascript size = '4rem' color = '#EFD81C' />
+        return <SiJavascript size = '35%' color = '#EFD81C'/>
     else if(tag === 'JSON')
-        return <SiJson size = '4rem'  />
+        return <SiJson size = '35%'/>
     else if(tag === 'HTML')
-        return <SiHtml5 size = '4rem' color = "#DC4A25" />  
+        return <SiHtml5 size = '35%' color = "#DC4A25"/>  
     else if(tag === 'Redux')
-        return <SiRedux size = '4rem' color = '#7248B6' /> 
+        return <SiRedux size = '35%' color = '#7248B6'/> 
     else if(tag === 'Linux')
-        return <FcLinux size = '4rem'  />
+        return <FcLinux size = '35%'/>
     else if(tag === 'Windows')
-        return <DiWindows size = '4rem'  />
+        return <DiWindows size = '35%'/>
     else if(tag === 'VS code')
-        return <SiVisualstudiocode size = '4rem' color = '#2174B3'  />
+        return <SiVisualstudiocode size = '35%' color = '#2174B3'/>
     else if(tag === 'Java')
-        return <DiJava size = '4rem' color = '#E06C00'  />
+        return <DiJava size = '35%' color = '#E06C00'/>
     else if(tag === 'ExpressJS')
-        return <FaNodeJs size = '4rem' color = '#E06C00'  />
-    return <SiRedux size = '4rem'  />
+        return <FaNodeJs size = '35%' color = '#E06C00'/>
+    return <SiRedux size = '35%'/>
     
    
 }

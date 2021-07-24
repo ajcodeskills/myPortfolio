@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 import { SectionDivider, SectionTitle } from "../../styles/GlobalComponents";
+import {Contact} from '../contact/Contact'
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
   CompanyContainer,
@@ -19,7 +20,7 @@ const Footer = () => {
     <FooterWrapper>
       <SectionDivider />
       <br />
-      <SectionTitle>Contact Me</SectionTitle>
+      <SectionTitle id='contact'>Contact Me</SectionTitle>
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
@@ -32,6 +33,7 @@ const Footer = () => {
           </LinkItem>
         </LinkColumn>
       </LinkList>
+      <Contact />
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>Innovating one project at a time</Slogan>

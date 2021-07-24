@@ -131,6 +131,17 @@ export const ListIcon = styled.img`
     margin-bottom: 0px;
   }
 `
+export const TechTag = styled.div`
+  font-size: 18px;
+  
+  @media ${props => props.theme.breakpoints.md}{
+    font-size: 15px;
+  }
+
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 12px;
+  }
+`
 export const SkillsContainer = styled.div`
   width: 100%;
   max-height: 100vh;
@@ -174,12 +185,12 @@ export const SkillsBox = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.md}{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   
   @media ${props => props.theme.breakpoints.sm}{
-    width: 80px;
-  height: 80px;
+    width: 60px;
+  height: 60px;
   }
 `;
